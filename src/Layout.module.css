@@ -1,0 +1,233 @@
+.main{
+    display: flex;
+}
+
+.nav{
+    background: #1e1e26;
+    width: 180px;
+    height: 100%;
+    padding: 15px; 
+    position: relative;
+    z-index: 999999;
+}
+
+.nav ul{
+    list-style: none;
+}
+
+.spaninli{
+    color: #8d919d;
+    font-family: "Barlow", serif;
+    font-size: 11px;
+    letter-spacing: 1px;
+    margin: 10px 0;
+}
+
+.scBtn{
+    cursor: pointer;
+    margin: 20px auto;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 17px;
+    background: #000;
+    border: none;
+    position: relative;
+    color: white;
+}
+
+.scBtn::after{
+    content: "";
+    background: linear-gradient(to right, #6cca72, #e2d54d, #e8a251, #e86f6b, #e86f6b, #6cca72);
+    position: absolute;
+    background-size: 300%;
+    background-position: 0;
+    left: -5px;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 10px;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+.scBtn:hover::after{
+    background-position: 400%;
+    animation: animateBtn 5s linear infinite;
+}
+
+@keyframes animateBtn {
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+
+.subhead{
+    text-decoration: none;
+    color: white;
+}
+
+.subhead h3{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 0;
+}
+
+.content{
+    height: 100vh;
+    width: calc(100% - 180px);
+}
+
+.upperNav{
+    height: 60px;
+    width: 100%;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    outline: 1px solid #252831;
+}
+
+.input{
+    height: 40px;
+    width: 300px;
+    background: #252831;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.searchimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchimg svg{
+    fill: #848ca1;
+}
+
+.ip::placeholder{
+    color: #848ca1;
+}
+
+.ip{
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    padding: 0 0 0 10px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #848ca1;
+    font-weight: 600;
+}
+
+.ip:focus-within{
+    border: none;
+    outline: none;
+}
+
+.maincontent{
+    height: calc(100% - 60px);
+}
+
+a.subhead h3{
+    padding: 10px;
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a.subhead h3:hover{
+    background: #131418;
+}
+
+.moreinfo{
+    margin: 50px auto;
+}
+
+.moreinfo img{
+    width: 100%;
+}
+
+.moreinfo p{
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.signUp{
+    background: #46cf73;
+    color: black;
+    padding: 7px 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    font-weight: 300;
+    transition: all 0.3s ease;
+}
+
+.signUp:hover{
+    background: #2e8a4d;
+    color: white;
+}
+
+.login{
+    background: #1e1e26;
+    color: white;
+    padding: 7px 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    font-weight: 300;
+    transition: all 0.3s ease;
+}
+
+.login:hover{
+    background: #393944;
+    color: white;
+}
+
+.utility{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: -45px;
+    opacity: 0;
+    z-index: 8;
+    transition: all 0.1s ease;
+}
+.utility img{
+    width: 100%;
+    height: 100%;
+}
+
+nav:hover .utility{
+    opacity: 1;
+
+}
+
+.pfp{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}

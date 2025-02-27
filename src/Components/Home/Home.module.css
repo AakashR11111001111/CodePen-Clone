@@ -1,0 +1,53 @@
+.main{
+    background: #131418;
+    height: 100%;
+    background-image: url('https://cpwebassets.codepen.io/assets/packs/lines-2-4e66616a5ef291c3566a7ddfe1ffaaa8.svg');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: right;
+}
+
+.hero{
+    display: flex;
+    width: 700px;
+    padding: 50px;
+}
+
+.heroimg{
+    height: 100%;
+    width: 80px;
+}
+
+.heroimg img{
+    width: 100%;
+}
+
+.herohead{
+    width: 600px;
+    color: white;
+    font-size: 20px;
+}
+
+.herotwo{
+    width: 700px;  
+    color: white;
+    padding: 0 50px;
+}
+
+.signupBtn{
+    margin: 20px 50px;
+    background: #46cf73;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    font-weight: 300;
+}
+
+.signupBtn:hover{
+    background: #2e8a4d;
+    color: white;
+}

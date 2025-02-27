@@ -1,0 +1,131 @@
+.nav{
+    height: 80px;
+    width: 100%;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    outline: 1px solid #252831;
+}
+
+.logo{
+    padding: 10px;
+}
+
+.logo img{
+    height: 40px;
+    width: 40px;
+}
+
+.title{
+    display: flex;
+    gap: 10px;
+}
+
+.title h3{
+    color: white;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.navLeft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.txtarea{
+    height: 40px;
+    width: fit-content;
+    resize: none;
+    background: transparent;
+    color: white;
+    font-size: 24px;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    border-radius: 3px;
+    overflow: scroll;
+}
+
+.txtarea::-webkit-scrollbar{
+    display: none;
+}
+
+.txtarea:focus-within{
+    outline: none;
+    border: .5px solid white;
+
+}
+
+.btns{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.editBtn svg{
+    fill: white;
+}
+
+.editBtn{
+    cursor: pointer;
+    border: none;
+    background: transparent;
+}
+
+.tick{
+    cursor: pointer;
+    transform: rotate(15deg);
+}
+
+.navBtn{
+    cursor: pointer;
+    width: fit-content;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 11px 10px;
+    background: #454857;
+    color: white;
+    border-radius: 5px;
+    gap: 5px;
+    border: none;
+    transition: all 0.1s ease;
+}
+
+.navBtn:hover{
+    background: #62667a;
+}
+ 
+.navBtn img{
+    height: 20px;
+
+}
+
+.signUpBtn{
+    background: #46cf73;
+    color: black;
+    padding: 11px 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    font-weight: 300;
+    transition: all 0.3s ease;
+}
+
+.signUpBtn:hover{
+    background: #2e8a4d;
+    color: white;
+}
+
+.pfp{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
