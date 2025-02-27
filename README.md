@@ -3,7 +3,7 @@
 A powerful Code Editor built using React, enabling real-time writing and previewing of **HTML, CSS, and JavaScript**.
 
 ## Live Demo
-🔗 [CodePen Clone Live](YOUR_LIVE_LINK_HERE)
+🔗 [CodePen Clone Live](https://code-pen-clone-bice.vercel.app/)
 
 ## Features
 - **Live Preview**: Instantly updates as users write their code.
